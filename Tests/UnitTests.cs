@@ -88,7 +88,7 @@ namespace GithubActionsLab
         [Test]
         public void Div_InvalidLarson()
         {
-            Assert.Throws<FormatException>(() => Program.Divide("1", "0"));
+            Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "a"));
         }
